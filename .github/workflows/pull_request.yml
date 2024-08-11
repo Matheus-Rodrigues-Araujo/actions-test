@@ -35,3 +35,4 @@ jobs:
 
       - name: Install dependencies
         run: npx ts-prune --error
+                
