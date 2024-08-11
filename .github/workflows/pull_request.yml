@@ -34,4 +34,5 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install dependencies
-        run: npm ts-prune --error
+        run: npx ts-prune --error
+                
