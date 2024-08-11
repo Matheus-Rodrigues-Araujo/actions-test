@@ -1,18 +1,5 @@
-import type { Config } from 'jest';
-
-const config: Config = {
+/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
+module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-  transform: {
-    '^.+\\.(ts|tsx)$': 'ts-jest',
-  },
-  globals: {
-    'ts-jest': {
-      isolatedModules: true,
-    },
-  },
-  testMatch: ['**/?(*.)+(spec|test).[tj]s?(x)'],
 };
-
-export default config;
